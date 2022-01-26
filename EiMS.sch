@@ -5,8 +5,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "Circuit for EiMS Device"
-Date "2021-05-12"
-Rev "1.4"
+Date "2021-07-13"
+Rev "1.5"
 Comp "Tokyo Tech"
 Comment1 "Designed by Hiroki Ohara"
 Comment2 ""
@@ -588,10 +588,6 @@ Wire Wire Line
 	2050 1100 2250 1100
 Connection ~ 2250 1100
 Wire Wire Line
-	3300 1100 3350 1100
-Wire Wire Line
-	3350 1900 3350 1100
-Wire Wire Line
 	3400 1950 3400 1400
 Wire Wire Line
 	3400 1400 3300 1400
@@ -607,8 +603,6 @@ Wire Wire Line
 	2000 3700 4000 3700
 Wire Wire Line
 	2050 1950 3400 1950
-Wire Wire Line
-	850  1900 3350 1900
 Wire Wire Line
 	1450 3450 1600 3450
 Wire Wire Line
@@ -1004,31 +998,22 @@ Wire Wire Line
 Wire Wire Line
 	7650 5100 7650 6350
 Wire Wire Line
-	1600 6750 1600 6850
-Wire Wire Line
-	6650 6350 6650 6850
-Wire Wire Line
-	1600 6850 6650 6850
-Wire Wire Line
 	2600 6750 2600 6800
 Wire Wire Line
-	2600 6800 6600 6800
+	2600 6800 5700 6800
 Wire Wire Line
 	6600 6300 6600 6800
 $Comp
 L Switch:SW_SPDT SW1
 U 1 1 609E6CD0
-P 3550 1100
-F 0 "SW1" H 3550 1385 50  0000 C CNN
-F 1 "SW_SPDT" H 3550 1294 50  0000 C CNN
-F 2 "EiMS:MS-500A-MF-K" H 3550 1100 50  0001 C CNN
-F 3 "~" H 3550 1100 50  0001 C CNN
-	1    3550 1100
+P 3500 1100
+F 0 "SW1" H 3500 1385 50  0000 C CNN
+F 1 "SW_SPDT" H 3500 1294 50  0000 C CNN
+F 2 "EiMS:MS-500A-MF-K" H 3500 1100 50  0001 C CNN
+F 3 "~" H 3500 1100 50  0001 C CNN
+	1    3500 1100
 	1    0    0    -1  
 $EndComp
-Connection ~ 3350 1100
-Wire Wire Line
-	3750 1000 8150 1000
 Wire Wire Line
 	8150 1000 8150 2850
 Wire Wire Line
@@ -1305,4 +1290,45 @@ Wire Wire Line
 Connection ~ 800  1450
 Wire Wire Line
 	800  1450 800  1500
+Wire Wire Line
+	6000 6800 6600 6800
+$Comp
+L Device:D D2
+U 1 1 60F090EA
+P 5850 6950
+F 0 "D2" H 5850 6850 50  0000 C CNN
+F 1 "D" H 5850 6750 50  0000 C CNN
+F 2 "Diode_THT:D_A-405_P10.16mm_Horizontal" H 5850 6950 50  0001 C CNN
+F 3 "~" H 5850 6950 50  0001 C CNN
+	1    5850 6950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1600 6950 5700 6950
+Wire Wire Line
+	1600 6750 1600 6950
+Wire Wire Line
+	6000 6950 6650 6950
+Wire Wire Line
+	6650 6350 6650 6950
+$Comp
+L Device:D D1
+U 1 1 60F07C85
+P 5850 6800
+F 0 "D1" H 5850 7000 50  0000 C CNN
+F 1 "D" H 5850 6900 50  0000 C CNN
+F 2 "Diode_THT:D_A-405_P10.16mm_Horizontal" H 5850 6800 50  0001 C CNN
+F 3 "~" H 5850 6800 50  0001 C CNN
+	1    5850 6800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3700 1000 3750 1000
+Wire Wire Line
+	3750 1000 3750 1900
+Wire Wire Line
+	850  1900 3750 1900
+Connection ~ 3750 1000
+Wire Wire Line
+	3750 1000 8150 1000
 $EndSCHEMATC
