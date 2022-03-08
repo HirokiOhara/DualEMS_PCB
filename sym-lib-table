@@ -1,3 +1,4 @@
 (sym_lib_table
   (lib (name EiMS)(type Legacy)(uri ${KIPRJMOD}/EiMS.lib)(options "")(descr ""))
+  (lib (name DualEMS_PCB-rescue)(type Legacy)(uri ${KIPRJMOD}/DualEMS_PCB-rescue.lib)(options "")(descr ""))
 )
