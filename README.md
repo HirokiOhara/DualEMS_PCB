@@ -14,3 +14,6 @@ Hiroki Ohara, Tokyo Tech ( h.ohara[at]gs.haselab.net )
 
 ## Citation
 When using or building upon this device/work in an academic publication, please consider citing as follows:
+```
+Hiroki Ohara and Shoichi Hasegawa. 2022. DualEMS: Two-Channel Arbitrary Waveform Electrical Muscle Stimulation Device to Design Interference Stimulation. In Augmented Humans 2022 (AHs 2022), March 13–15, 2022, Kashiwa, Chiba, Japan. ACM, New York, NY, USA, 8 pages. https: //doi.org/10.1145/3519391.3519415
+```
